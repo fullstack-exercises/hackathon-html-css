@@ -1,4 +1,3 @@
-/// Variables
 // Colors
 $color-dark-pink: #b4436c;
 $color-green: #6b9080;
@@ -157,9 +156,6 @@ header {
     }
 }
 
-// Intro {
-.intro {}
-
 // Cards
 .cards {
     margin-bottom: $space-l;
@@ -176,6 +172,12 @@ header {
                 width: 100%;
                 height: 200px;
                 border-radius: 10px 10px 0px 0px;
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                &:hover {
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
             }
             .card__meta {
                 padding: $space;
@@ -192,7 +194,6 @@ header {
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 */
     height: 0;
     iframe {
         position: absolute;
@@ -232,7 +233,8 @@ form {
     input[type="email"],
     input[type="phone"],
     textarea {
-        width: 100%;
+        width: 95%;
+        display: block;
         margin-bottom: $space;
         border: 1px solid $color-green;
         padding: $space-s;
